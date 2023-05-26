@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Книжная библиотека</title>
+    <title>1</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -30,22 +30,10 @@
         <nav
           class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center"
         >
-          <a class="mr-5 cursor-pointer font-bold hover:text-gray-900" href="/"
-            >Библиотека</a
-          >
-          <a class="mr-5 cursor-pointer hover:text-gray-900" href="/top.html"
-            >Топ 50</a
-          >
-          <a
-            class="mr-5 cursor-pointer hover:text-gray-900"
-            href="/recomendation.html"
-            >Хочу книгу</a
-          >
-          <a
-            class="mr-5 cursor-pointer hover:text-gray-900"
-            href="/my-books.html"
-            >Избранное</a
-          >
+          <a class="mr-5 cursor-pointer hover:text-gray-900">Библиотека</a>
+          <a class="mr-5 cursor-pointer hover:text-gray-900">Топ 50</a>
+          <a class="mr-5 cursor-pointer hover:text-gray-900">Хочу книгу</a>
+          <a class="mr-5 cursor-pointer hover:text-gray-900">Избранное</a>
         </nav>
         <a
           class="inline-flex transition-all gap-2 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
@@ -56,52 +44,51 @@
       </div>
     </header>
 
-    <h1 class="flex justify-center text-4xl font-bold">Библиотека</h1>
-
-    <main class="grid px-20 py-8 grid-cols-4 gap-4">
-      <div class="block shadow-md rounded-md p-4 relative">
+    <main class="container mx-auto flex gap-4 flex-col px-20 py-8">
+      <div class="flex mx-auto gap-32 sm:gap-64 justify-between">
         <img
           alt="Art"
           src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          class="h-64 w-full rounded-sm object-cover sm:h-80 lg:h-96"
+          class="h-64 w-64 rounded-sm object-cover sm:h-80 lg:h-96"
         />
+        <div class="flex flex-col items-end">
+          <h3 class="mt-4 text-6xl font-bold text-gray-900">Book-Title</h3>
+          <h4 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+            ISBN ее номер
+          </h4>
 
-        <div
-          class="absolute top-2 right-2 px-2 py-1 bg-green-500 bg-opacity-80 rounded-full"
-        >
-          <i class="fa-solid fa-smile"></i>
-        </div>
+          <p class="mt-2 max-w-sm text-gray-700">Book-Author</p>
+          <p class="mt-2 max-w-sm text-gray-700">Year-of-Publication</p>
+          <p class="mt-2 max-w-sm text-gray-700">Publisher</p>
 
-        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
-          Сюда заголовок книги
-        </h3>
-
-        <p class="mt-2 max-w-sm text-gray-700">А сюда автор</p>
-
-        <div class="mt-2 flex gap-4 justify-between">
-          <a
-            href="/1.html"
-            class="inline-flex transition-all gap-2 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
-          >
-            Подробнее
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-
-          <div>
-            <button class="p-2 text-xl transition-all hover:text-red-500">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <button
-              class="p-2 text-xl text-red-400 transition-all hover:text-red-500"
-            >
-              <i class="fa-solid fa-heart"></i>
-            </button>
+          <div class="mt-auto flex justify-between">
+            <div class="flex gap-4 items-center">
+              <div
+                class="w-8 h-8 px-2 py-1 bg-green-500 bg-opacity-80 rounded-full"
+              >
+                <i class="fa-solid fa-smile"></i>
+              </div>
+              <button class="p-2 text-xl transition-all hover:text-red-500">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button
+                class="p-2 text-xl text-red-400 transition-all hover:text-red-500"
+              >
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <a
+                class="inline-flex cursor-pointer transition-all gap-2 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+              >
+                Купить
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="text-gray-600 body-font">
+    <footer class="mt-64 text-gray-600 body-font">
       <div
         class="container px-5 py-8 border-t-2 border-t-slate-100 mt-30 mx-auto flex justify-center items-center sm:flex-row flex-col"
       >
